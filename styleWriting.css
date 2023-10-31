@@ -1,0 +1,113 @@
+body
+{
+	margin: 20px;
+	font-family: system-ui;
+	font-size: 13px;
+	line-height: 25px;
+}
+
+body
+{
+	background-image: url("Background.jpg");
+	background-color: #00072D;
+
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.header
+{
+	font-size: 15px;
+	line-height: 11px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #000f60;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 3px 100px;
+	display: flex;
+	align-items: center;
+	z-index: 100;
+	justify-content: space-between;	
+}
+
+.navbar a
+{
+	margin-left: 40px;
+}
+
+.preView
+{
+	transition: transform 0.3s;
+}
+
+.preView:hover
+{
+	transform: translateY(-10px);
+}
+
+@keyframes slideInLeft
+{
+	from 
+	{
+		transform: translateX(-500px);
+		opacity: 0;
+	}
+
+	to 
+	{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.animate--slower
+{
+	animation-delay: 0.3s;
+}
+
+.animate--slow
+{
+	animation-delay: 0.2s;
+}
+
+.animate--fast
+{
+	animation-delay: 0.1s;
+}
+
+.animate
+{
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+.slideInLeftCenter
+{
+	text-align: center;
+	animation-name: slideInLeft;
+	animation-timing-function: ease-in;
+}
+
+.slideInLeftRight
+{
+	text-align: right;	
+	animation-name: slideInLeft;
+	animation-timing-function: ease-in;
+}
+
+.slideInLeftLeft
+{
+	
+	text-align: left;	
+	animation-name: slideInLeft;
+	animation-timing-function: ease-in;
+}
+
+.space
+{
+	word-spacing: 60px;
+}
