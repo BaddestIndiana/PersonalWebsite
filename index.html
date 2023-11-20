@@ -1,119 +1,68 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Phishing</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-  </head>
-  <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
-      </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Phishing</div>
-      </div>
-    </div>
-    <script>
-      var container = document.querySelector("#unity-container");
-      var canvas = document.querySelector("#unity-canvas");
-      var loadingBar = document.querySelector("#unity-loading-bar");
-      var progressBarFull = document.querySelector("#unity-progress-bar-full");
-      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
-      var warningBanner = document.querySelector("#unity-warning");
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FrogGames.co/MainPage</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
 
-      // Shows a temporary message banner/ribbon for a few seconds, or
-      // a permanent error message on top of the canvas if type=='error'.
-      // If type=='warning', a yellow highlight color is used.
-      // Modify or remove this function to customize the visually presented
-      // way that non-critical warnings and error messages are presented to the
-      // user.
-      function unityShowBanner(msg, type) {
-        function updateBannerVisibility() {
-          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
-        }
-        var div = document.createElement('div');
-        div.innerHTML = msg;
-        warningBanner.appendChild(div);
-        if (type == 'error') div.style = 'background: red; padding: 10px;';
-        else {
-          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
-          setTimeout(function() {
-            warningBanner.removeChild(div);
-            updateBannerVisibility();
-          }, 5000);
-        }
-        updateBannerVisibility();
-      }
+	<body a link="orange" vlink="pink">
+		
+		<header class="header">
+			<a href="index.html" class="logo">
+			<img class="home" src="../Website/Images/home.png" height = "25" width = "25">
+			</a>
 
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Biuld.loader.js";
-      var config = {
-        dataUrl: buildUrl + "/Biuld.data",
-        frameworkUrl: buildUrl + "/Biuld.framework.js",
-        codeUrl: buildUrl + "/Biuld.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Phishing",
-        productVersion: "1.0",
-        showBanner: unityShowBanner,
-      };
+			<nav class="navbar">
+				<a href="AboutMe.html" target=_self title="More About me and my Skills">About Me</a>
+				<a href="Gallery.html" target=_self title="Past Projects I created and Developed">Past Projects</a>
+				<a href="FutureProjects.html" target=_self title="Future Projects and Ideas">Future Projects</a>
+				<a href="PlayableInBrowser.html" target=_self title="Playable Projects On This Site">Playable In Browser</a>
+			</nav>
+		</header>
 
-      // By default Unity keeps WebGL canvas render target size matched with
-      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
-      // Set this to false if you want to decouple this synchronization from
-      // happening inside the engine, and you would instead like to size up
-      // the canvas DOM size and WebGL render target sizes yourself.
-      // config.matchWebGLToCanvasSize = false;
+		<br>
+		<h1 class= "animate slideInLeftCenter animate--faster">Owen Jones</h1>
+		<h3 class= "animate slideInLeftCenter animate--faster">Avid Gamer, Game Devloper, Programmer and BSc (Hons) 3D Animation and Games Development Graduate </h2>
+		<h3 class= "animate slideInLeftCenter animate--faster">I love making new experiances and works of passion in a multatude of different forms</h3>
 
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // Mobile device style: fill the whole browser client area with the game canvas:
+		<div class="animate slideInLeftCenter animate--fast">
+		<img class="pfpimg" src="../Website/Images/pfp.png" height = "250" width = "250">
+		</div>
+		
+		<p><a href="https://baddestindiana9.itch.io" target="_blank" title="my perosnal Itch.IO page">
+		<h4 class="animate slideInLeftCenter animate--slow" style="text-align: center;"> itch.IO
+		</a> <a href="https://www.artstation.com/baddest" target="_blank" title="my perosnal ArtStation page">
+		- ArtStation
+		</a> <a href="https://github.com/Baaddest" target="_blank" title="my perosnal GitHub page">
+		- Github </h4> 
+		</a>
+		</p>
+		
+		<p><h2 class="animate slideInLeftCenter animate--slow"> Software and Skills</h2>
+		</p>
 
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
-        container.className = "unity-mobile";
-        canvas.className = "unity-mobile";
+		<div class="animate slideInLeftCenter animate--slow">		
+		<img class="preView" src="../Website/Images/Unity.png" height = "100" width = "100">
+		<img class="preView" src="../Website/Images/VisualStudio.png" height = "100" width = "100">	
+		<img class="preView" src="../Website/Images/Maya.png" height = "100" width = "100">
+		<img class="preView" src="../Website/Images/Blender.png" height = "100" width = "100">
+		<img class="preView" src="../Website/Images/Jira.png" height = "100" width = "100">
+		<img class="preView" src="../Website/Images/Substance.png" height = "100" width = "100">
+		</div>
+		<br><br>
 
-        // To lower canvas resolution on mobile devices to gain some
-        // performance, uncomment the following line:
-        // config.devicePixelRatio = 1;
+		<h2 class="animate slideInLeftCenter animate--slow"> Programming languages</h2>
+		<div class="animate slideInLeftCenter animate--slow">		
+		<img class="preView" src="../Website/Images/CS.png" height = "100" width = "100">
+		<img class="preView" src="../Website/Images/Java.png" height = "100" width = "100">
+		<img class="preView" src="../Website/Images/html.png" height = "100" width = "100">
+		</div>
+		<br>
 
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
-      } else {
-        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+		
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
-      }
-
-      loadingBar.style.display = "block";
-
-      var script = document.createElement("script");
-      script.src = loaderUrl;
-      script.onload = () => {
-        createUnityInstance(canvas, config, (progress) => {
-          progressBarFull.style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
-          loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
-        }).catch((message) => {
-          alert(message);
-        });
-      };
-      document.body.appendChild(script);
-    </script>
-  </body>
+	</body>
 </html>
+
