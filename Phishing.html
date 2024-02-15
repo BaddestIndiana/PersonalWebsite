@@ -28,12 +28,42 @@
 		<h2 class= "animate slideInLeftCenter animate--faster">A HTML based fishing game where the player controls a lure and must catch as many fish as they can with different mechanics and gameplay elements</h2>
 		<h3 class="animate slideInLeftCenter animate--faster">
 			In this game the player plays as a fishermans' lure that is cast into the sea and they must avoid fish that are trying to get caught. When the player hits a fish they start being pulled back up and must catch all the fish they were just avoiding to gain as many points as they can until they are at the surface.
-			This is a simple idea that has been seen before, however I hope to put my own spin on this idea in different ways and have it hosted on this site to play. <br>
-			This Game is my main priority right now, below are the links to the Jira for the project, the GitHub with the scripts created so far and a link to a detailed design document I have made for the project explaining the game mechanics, inspiration, style and other important aspects. I also have my twitter link where I post updates and progress on my work regularly.
+			This is a simple idea that I have put a spin on and plays abit like an old bullet hell like game where the main gameplay loop is competing with people you know to get the highest score on the leaderboard.<br>
+			below are the links to the Jira for the project, the GitHub with the scripts created so far and a link to a detailed design document I have made for the project explaining the game mechanics, inspiration, style and other important aspects. I also have my twitter link where I post updates and progress on my work regularly.
 			<br>
-			A Playable version of the game will be available to play on this website when it is getting closer to the end of development with some of the less important features missing that will be implemented later on.
 		</h3>
-		<p>
+
+		<div class="animate slideInLeftCenter animate--faster">
+		<img class="preView" src="../Website/Images/PTiitle.png" height="200" width="250">
+		</div>
+
+		<h2 class="animate slideInLeftCenter animate--faster">Scripts</h2>
+		<h3 class="animate slideInLeftCenter animate--faster">
+			The Scripts that were created for the game were very intresting and enjoyable to make as they were very game specific scripts with the game being so unique in its gameplay and mechanics. These included sctipts that would handle simulating the depth of the sea as the player casts into it, this was achieved by a counter that uses the Time.DeltaTime
+			function to count how long the player had been sinking, it then used this data to print a depth value to the screen and also trigger different events such as the fish and backgorunds to change at lower depths, to give a visual hint and make it harder for the player as the descend. This script also worked to do the opposite as the player was ascending back to the surface,
+			counting down instead and changing the fish and backgorunds back.<br>
+			This script also allowed for the bubble spawner and fish spawner to switch depending on if the player was moving up through the water or down into it. This was just one of the few important scripts used in this project and I worked to make sure these were efficient, effective and fitting for the HTML build.<br>
+			This code and all the other scripts can be seen on my github page linked below.
+		</h3>
+		<div class="animate slideInLeftCenter animate--faster">
+			<img class="preView" src="../Website/Images/PhCode1.png" height="500" width="450">
+			<img class="preView" src="../Website/Images/PhCode2.png" height="500" width="450">
+			<img class="preView" src="../Website/Images/PhCode3.png" height="500" width="450">
+		</div>
+
+		<h2 class="animate slideInLeftCenter animate--faster">Art and Visuals</h2>
+
+		<h3 class="animate slideInLeftCenter animate--faster">
+		For the visuals I decided to keep it simple and go with a pixel art style as I felt that it fit the very arcade like gameplay where the players objective is to get the highest score on the leaderboard. This can be seen with my choice of exaggerated sprites and bright colours that lend to this and I believe suit the game well. I created these sprites using a website called Piskel 
+		which is a free online raycast sprite creator. Some of these sprites can be seen below.
+		</h3>
+		<div class="animate slideInLeftCenter animate--faster">
+			<img class="preView" src="../Website/Images/PhArt1.png" height="300" width="300">
+			<img class="preView" src="../Website/Images/PhArt2.png" height="300" width="300">
+		</div>
+
+
+
 		<a href="https://id.atlassian.com/invite/p/jira-software?id=eLaW9dgpQWOdzLGEilHMrQ" target="_blank" title="Phishing Jira">		
 		<h2 class="animate slideInLeftCenter animate--faster" style="text-align: center;"> Jira - </a>	
 		<a href="https://docs.google.com/document/d/11t6sH9P9fObyuJ184NtLb8RPSV69MMwBsFDWoonPUv4/edit?usp=sharing" target="_blank" title="Design Doc">
