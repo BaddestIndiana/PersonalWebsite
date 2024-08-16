@@ -1,28 +1,23 @@
-body
-{
+
+body {
 	margin: 20px;
 	font-family: system-ui;
 	font-size: 13px;
 	line-height: 25px;
-}
-
-body
-{
 	background-image: url("Background.jpg");
-	background-color: #00072D;
-
+	background-color: #F8B195;
 	background-repeat: no-repeat;
-	color: white;
+	color: #F67280;
+	text-shadow: 1px 2px 8px #F67280;
 }
 
-.header
-{
+.header {
 	font-size: 15px;
 	line-height: 11px;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: #000f60;
+	background-color: #F67280;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -31,7 +26,7 @@ body
 	display: flex;
 	align-items: center;
 	z-index: 100;
-	justify-content: space-between;	
+	justify-content: space-between;
 }
 
 .navbar a
