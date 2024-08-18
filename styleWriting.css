@@ -5,10 +5,10 @@ body {
 	font-size: 13px;
 	line-height: 25px;
 	background-image: url("Background.jpg");
-	background-color: #F8B195;
+	background-color: #AE58AF;
 	background-repeat: no-repeat;
-	color: #F67280;
-	text-shadow: 1px 2px 8px #F67280;
+	color: #603B61;
+	text-shadow: 1px 2px 8px #603B61;
 }
 
 .header {
@@ -17,7 +17,7 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: #F67280;
+	background-color: #603B61;
 	position: fixed;
 	top: 0;
 	left: 0;
